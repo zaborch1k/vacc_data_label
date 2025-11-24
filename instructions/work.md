@@ -3,9 +3,28 @@
 ## Работа в Label Studio
 ### 0. Оптимальный алгоритм работы
 Создайте папку labels где-то у себя. Туда вы будете выгружать готовые txt файлы.   
-Оптимальный алгоритм работы: TODO  
-TODO: перед запуском надо активировать venv
+Оптимальный алгоритм работы:  
+0.1. Загрузить 15-20 картинок в Label Studio  
+0.2. Разметить картинки  
+0.3. Выгрузить картинки на гитхиб  
+0.4. Перейти к пункту 0.1.  
 ### 1. Запуск
+1.0. Скопируйте и встаьвте в терминал:
+```bash
+cd ./data_work
+```
+#### Для винды:  
+```bash
+venv\Scripts\activate.bat
+```
+Слева от ```C:\Users\...``` должна появиться надпись ```(venv)```
+
+#### Для не винды:
+```bash
+source venv/bin/activate
+```
+Слева от ```$``` должна появиться надпись ```(venv)```  
+
 1.1. Запустите в терминале:
 ```bash
 label-studio
@@ -23,22 +42,22 @@ label-studio
 
     Не заезжайте на объект, он весь должен находиться в рамке. Это плохо:
 
-    <img src=".\../images/ex2.png" alt="drawing" width="350"/>
+    <img src="./images/ex2.png" alt="drawing" width="350"/>
 
     Старайтесь не оставлять лишнего места в рамке. Это плохо:
 
-    <img src=".\../images/ex1.png" alt="drawing" width="350"/>
+    <img src="./images/ex1.png" alt="drawing" width="350"/>
 
     Это хорошо:
 
-    <img src=".\../images/ex3.png" alt="drawing" width="350"/>
+    <img src="./images/ex3.png" alt="drawing" width="350"/>
 
     От ваших действий напрямую зависит точность модели
 
 3. Submit, чтобы перейти к следующей картинке
 4. Нажмите на название своего проекта, чтобы закончить с разметкой и вернуться в проект
 
-    <img src=".\../images/ex4.png" alt="drawing" width="600"/>
+    <img src="./images/ex4.png" alt="drawing" width="600"/>
 
 ### 3. Выгрузка готовых картинок из Label Studio
 1. Экспорт размеченных картинок  
@@ -48,7 +67,7 @@ label-studio
 
     1.2. Export справа сверху -> пролистать вниз -> выбрать YOLO -> еще ниже -> Export  
 
-    <img src=".\../images/ex5.png" alt="drawing" width="500"/>
+    <img src="./images/ex5.png" alt="drawing" width="500"/>
 
     Загрузится зипка с файлами. [Загрузите их на гитхаб](#загрузка-labels-на-github)
 
@@ -65,10 +84,10 @@ label-studio
 3. Загрузите все txt из папки, в которую вы пихали содержимое labels, когда [выгружали картинки](#3-выгрузка-готовых-картинок-из-label-studio):  
 Add file справа сверху -> Upload Files -> or choose your files -> выбираете файлы
 
-    <img src=".\../images/ex6.png" alt="drawing" width="500"/>  
+    <img src="./images/ex6.png" alt="drawing" width="500"/>  
     
     Напишите что-то вот тут и нажмите на зелененькое commit changes 
 
-    <img src=".\../images/ex7.png" alt="drawing" width="500"/>
+    <img src="./images/ex7.png" alt="drawing" width="500"/>
 
 4. Очистите содержимое папки у себя 
